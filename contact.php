@@ -11,3 +11,4 @@ $city = trim($_POST["city"])
 $message = "Имя: $name \nТелефон: $tel \nГород: $city ";
 $pagetitle = "Заявка с сайта \"$sitename\"";
 mail($recepient, $pagetitle, $message)
+header("Access-Control-Allow-Origin: *");
